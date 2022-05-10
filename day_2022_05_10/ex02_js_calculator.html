@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal(){
+            const num1 = document.getElementById("num1").value;
+            const num2 = document.getElementById("num2").value;
+            console.log(`num1: ${num1}, num2: ${num2}`);
+            const num3 = parseInt(num1) + parseInt(num2);
+            document.getElementById("result").innerHTML = num3;
+            console.log(document.getElementById("result").innerHTML);
+        }
+    </script>
+</head>
+<body>
+    <h2>계산기</h2>
+    number1: <input type="text" id="num1">
+    number2: <input type="text" id="num2">
+    <button onclick="cal()">계산</button>
+    <div id="result">계산 결과를 출력</div>
+</body>
+</html>
